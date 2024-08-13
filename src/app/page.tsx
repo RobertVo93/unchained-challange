@@ -28,6 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
   '&:hover': {
     border: "1px solid white",
   },
+  cursor: "pointer",
 }));
 
 type HeroType = "wizard" | "warrior" | "rogue";
@@ -75,7 +76,6 @@ export default function Home() {
               <img alt="Mage" width={`100%`} height={`auto`} src={"/mage_class.jpg"} />
             </Button>
             <Box sx={{ color: "white" }}>Mage</Box>
-            <Box sx={{ color: "white" }}>{mage.availablePoints}</Box>
           </Item>
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -84,7 +84,6 @@ export default function Home() {
               <img alt="Warrior" width={`100%`} height={`auto`} src={"/warrior_class.jpg"} />
             </Button>
             <Box sx={{ color: "white" }}>Warrior</Box>
-            <Box sx={{ color: "white" }}>{warrior.availablePoints}</Box>
           </Item>
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -93,7 +92,6 @@ export default function Home() {
               <img alt="Rogue" width={`100%`} height={`auto`} src={"/rogue_class.jpg"} />
             </Button>
             <Box sx={{ color: "white" }}>Rogue</Box>
-            <Box sx={{ color: "white" }}>{rogue.availablePoints}</Box>
           </Item>
         </Grid>
       </Grid>
